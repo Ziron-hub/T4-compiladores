@@ -1,489 +1,437 @@
 # Generated from LA.g4 by ANTLR 4.13.0
 from antlr4 import *
+
 if "." in __name__:
     from .LAParser import LAParser
 else:
     from LAParser import LAParser
 
+
 # This class defines a complete listener for a parse tree produced by LAParser.
 class LAListener(ParseTreeListener):
-
     # Enter a parse tree produced by LAParser#programa.
-    def enterPrograma(self, ctx:LAParser.ProgramaContext):
+    def enterPrograma(self, ctx: LAParser.ProgramaContext):
         pass
 
     # Exit a parse tree produced by LAParser#programa.
-    def exitPrograma(self, ctx:LAParser.ProgramaContext):
+    def exitPrograma(self, ctx: LAParser.ProgramaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#declaracoes.
-    def enterDeclaracoes(self, ctx:LAParser.DeclaracoesContext):
+    def enterDeclaracoes(self, ctx: LAParser.DeclaracoesContext):
         pass
 
     # Exit a parse tree produced by LAParser#declaracoes.
-    def exitDeclaracoes(self, ctx:LAParser.DeclaracoesContext):
+    def exitDeclaracoes(self, ctx: LAParser.DeclaracoesContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#decl_local_global.
-    def enterDecl_local_global(self, ctx:LAParser.Decl_local_globalContext):
+    def enterDecl_local_global(self, ctx: LAParser.Decl_local_globalContext):
         pass
 
     # Exit a parse tree produced by LAParser#decl_local_global.
-    def exitDecl_local_global(self, ctx:LAParser.Decl_local_globalContext):
+    def exitDecl_local_global(self, ctx: LAParser.Decl_local_globalContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#declaracao_local.
-    def enterDeclaracao_local(self, ctx:LAParser.Declaracao_localContext):
+    def enterDeclaracao_local(self, ctx: LAParser.Declaracao_localContext):
         pass
 
     # Exit a parse tree produced by LAParser#declaracao_local.
-    def exitDeclaracao_local(self, ctx:LAParser.Declaracao_localContext):
+    def exitDeclaracao_local(self, ctx: LAParser.Declaracao_localContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#declaracao_variavel.
-    def enterDeclaracao_variavel(self, ctx:LAParser.Declaracao_variavelContext):
+    def enterDeclaracao_variavel(self, ctx: LAParser.Declaracao_variavelContext):
         pass
 
     # Exit a parse tree produced by LAParser#declaracao_variavel.
-    def exitDeclaracao_variavel(self, ctx:LAParser.Declaracao_variavelContext):
+    def exitDeclaracao_variavel(self, ctx: LAParser.Declaracao_variavelContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#declaracao_constante.
-    def enterDeclaracao_constante(self, ctx:LAParser.Declaracao_constanteContext):
+    def enterDeclaracao_constante(self, ctx: LAParser.Declaracao_constanteContext):
         pass
 
     # Exit a parse tree produced by LAParser#declaracao_constante.
-    def exitDeclaracao_constante(self, ctx:LAParser.Declaracao_constanteContext):
+    def exitDeclaracao_constante(self, ctx: LAParser.Declaracao_constanteContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#declaracao_tipo.
-    def enterDeclaracao_tipo(self, ctx:LAParser.Declaracao_tipoContext):
+    def enterDeclaracao_tipo(self, ctx: LAParser.Declaracao_tipoContext):
         pass
 
     # Exit a parse tree produced by LAParser#declaracao_tipo.
-    def exitDeclaracao_tipo(self, ctx:LAParser.Declaracao_tipoContext):
+    def exitDeclaracao_tipo(self, ctx: LAParser.Declaracao_tipoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#variavel.
-    def enterVariavel(self, ctx:LAParser.VariavelContext):
+    def enterVariavel(self, ctx: LAParser.VariavelContext):
         pass
 
     # Exit a parse tree produced by LAParser#variavel.
-    def exitVariavel(self, ctx:LAParser.VariavelContext):
+    def exitVariavel(self, ctx: LAParser.VariavelContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#identificador.
-    def enterIdentificador(self, ctx:LAParser.IdentificadorContext):
+    def enterIdentificador(self, ctx: LAParser.IdentificadorContext):
         pass
 
     # Exit a parse tree produced by LAParser#identificador.
-    def exitIdentificador(self, ctx:LAParser.IdentificadorContext):
+    def exitIdentificador(self, ctx: LAParser.IdentificadorContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#dimensao.
-    def enterDimensao(self, ctx:LAParser.DimensaoContext):
+    def enterDimensao(self, ctx: LAParser.DimensaoContext):
         pass
 
     # Exit a parse tree produced by LAParser#dimensao.
-    def exitDimensao(self, ctx:LAParser.DimensaoContext):
+    def exitDimensao(self, ctx: LAParser.DimensaoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#tipo.
-    def enterTipo(self, ctx:LAParser.TipoContext):
+    def enterTipo(self, ctx: LAParser.TipoContext):
         pass
 
     # Exit a parse tree produced by LAParser#tipo.
-    def exitTipo(self, ctx:LAParser.TipoContext):
+    def exitTipo(self, ctx: LAParser.TipoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#tipo_basico.
-    def enterTipo_basico(self, ctx:LAParser.Tipo_basicoContext):
+    def enterTipo_basico(self, ctx: LAParser.Tipo_basicoContext):
         pass
 
     # Exit a parse tree produced by LAParser#tipo_basico.
-    def exitTipo_basico(self, ctx:LAParser.Tipo_basicoContext):
+    def exitTipo_basico(self, ctx: LAParser.Tipo_basicoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#tipo_basico_ident.
-    def enterTipo_basico_ident(self, ctx:LAParser.Tipo_basico_identContext):
+    def enterTipo_basico_ident(self, ctx: LAParser.Tipo_basico_identContext):
         pass
 
     # Exit a parse tree produced by LAParser#tipo_basico_ident.
-    def exitTipo_basico_ident(self, ctx:LAParser.Tipo_basico_identContext):
+    def exitTipo_basico_ident(self, ctx: LAParser.Tipo_basico_identContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#tipo_estendido.
-    def enterTipo_estendido(self, ctx:LAParser.Tipo_estendidoContext):
+    def enterTipo_estendido(self, ctx: LAParser.Tipo_estendidoContext):
         pass
 
     # Exit a parse tree produced by LAParser#tipo_estendido.
-    def exitTipo_estendido(self, ctx:LAParser.Tipo_estendidoContext):
+    def exitTipo_estendido(self, ctx: LAParser.Tipo_estendidoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#valor_constante.
-    def enterValor_constante(self, ctx:LAParser.Valor_constanteContext):
+    def enterValor_constante(self, ctx: LAParser.Valor_constanteContext):
         pass
 
     # Exit a parse tree produced by LAParser#valor_constante.
-    def exitValor_constante(self, ctx:LAParser.Valor_constanteContext):
+    def exitValor_constante(self, ctx: LAParser.Valor_constanteContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#registro.
-    def enterRegistro(self, ctx:LAParser.RegistroContext):
+    def enterRegistro(self, ctx: LAParser.RegistroContext):
         pass
 
     # Exit a parse tree produced by LAParser#registro.
-    def exitRegistro(self, ctx:LAParser.RegistroContext):
+    def exitRegistro(self, ctx: LAParser.RegistroContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#declaracao_global.
-    def enterDeclaracao_global(self, ctx:LAParser.Declaracao_globalContext):
+    def enterDeclaracao_global(self, ctx: LAParser.Declaracao_globalContext):
         pass
 
     # Exit a parse tree produced by LAParser#declaracao_global.
-    def exitDeclaracao_global(self, ctx:LAParser.Declaracao_globalContext):
+    def exitDeclaracao_global(self, ctx: LAParser.Declaracao_globalContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#parametro.
-    def enterParametro(self, ctx:LAParser.ParametroContext):
+    def enterParametro(self, ctx: LAParser.ParametroContext):
         pass
 
     # Exit a parse tree produced by LAParser#parametro.
-    def exitParametro(self, ctx:LAParser.ParametroContext):
+    def exitParametro(self, ctx: LAParser.ParametroContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#parametros.
-    def enterParametros(self, ctx:LAParser.ParametrosContext):
+    def enterParametros(self, ctx: LAParser.ParametrosContext):
         pass
 
     # Exit a parse tree produced by LAParser#parametros.
-    def exitParametros(self, ctx:LAParser.ParametrosContext):
+    def exitParametros(self, ctx: LAParser.ParametrosContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#corpo.
-    def enterCorpo(self, ctx:LAParser.CorpoContext):
+    def enterCorpo(self, ctx: LAParser.CorpoContext):
         pass
 
     # Exit a parse tree produced by LAParser#corpo.
-    def exitCorpo(self, ctx:LAParser.CorpoContext):
+    def exitCorpo(self, ctx: LAParser.CorpoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmd.
-    def enterCmd(self, ctx:LAParser.CmdContext):
+    def enterCmd(self, ctx: LAParser.CmdContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmd.
-    def exitCmd(self, ctx:LAParser.CmdContext):
+    def exitCmd(self, ctx: LAParser.CmdContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdLeia.
-    def enterCmdLeia(self, ctx:LAParser.CmdLeiaContext):
+    def enterCmdLeia(self, ctx: LAParser.CmdLeiaContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdLeia.
-    def exitCmdLeia(self, ctx:LAParser.CmdLeiaContext):
+    def exitCmdLeia(self, ctx: LAParser.CmdLeiaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdEscreva.
-    def enterCmdEscreva(self, ctx:LAParser.CmdEscrevaContext):
+    def enterCmdEscreva(self, ctx: LAParser.CmdEscrevaContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdEscreva.
-    def exitCmdEscreva(self, ctx:LAParser.CmdEscrevaContext):
+    def exitCmdEscreva(self, ctx: LAParser.CmdEscrevaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdSe.
-    def enterCmdSe(self, ctx:LAParser.CmdSeContext):
+    def enterCmdSe(self, ctx: LAParser.CmdSeContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdSe.
-    def exitCmdSe(self, ctx:LAParser.CmdSeContext):
+    def exitCmdSe(self, ctx: LAParser.CmdSeContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdCaso.
-    def enterCmdCaso(self, ctx:LAParser.CmdCasoContext):
+    def enterCmdCaso(self, ctx: LAParser.CmdCasoContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdCaso.
-    def exitCmdCaso(self, ctx:LAParser.CmdCasoContext):
+    def exitCmdCaso(self, ctx: LAParser.CmdCasoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdPara.
-    def enterCmdPara(self, ctx:LAParser.CmdParaContext):
+    def enterCmdPara(self, ctx: LAParser.CmdParaContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdPara.
-    def exitCmdPara(self, ctx:LAParser.CmdParaContext):
+    def exitCmdPara(self, ctx: LAParser.CmdParaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdEnquanto.
-    def enterCmdEnquanto(self, ctx:LAParser.CmdEnquantoContext):
+    def enterCmdEnquanto(self, ctx: LAParser.CmdEnquantoContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdEnquanto.
-    def exitCmdEnquanto(self, ctx:LAParser.CmdEnquantoContext):
+    def exitCmdEnquanto(self, ctx: LAParser.CmdEnquantoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdFaca.
-    def enterCmdFaca(self, ctx:LAParser.CmdFacaContext):
+    def enterCmdFaca(self, ctx: LAParser.CmdFacaContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdFaca.
-    def exitCmdFaca(self, ctx:LAParser.CmdFacaContext):
+    def exitCmdFaca(self, ctx: LAParser.CmdFacaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdAtribuicao.
-    def enterCmdAtribuicao(self, ctx:LAParser.CmdAtribuicaoContext):
+    def enterCmdAtribuicao(self, ctx: LAParser.CmdAtribuicaoContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdAtribuicao.
-    def exitCmdAtribuicao(self, ctx:LAParser.CmdAtribuicaoContext):
+    def exitCmdAtribuicao(self, ctx: LAParser.CmdAtribuicaoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdChamada.
-    def enterCmdChamada(self, ctx:LAParser.CmdChamadaContext):
+    def enterCmdChamada(self, ctx: LAParser.CmdChamadaContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdChamada.
-    def exitCmdChamada(self, ctx:LAParser.CmdChamadaContext):
+    def exitCmdChamada(self, ctx: LAParser.CmdChamadaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#cmdRetorne.
-    def enterCmdRetorne(self, ctx:LAParser.CmdRetorneContext):
+    def enterCmdRetorne(self, ctx: LAParser.CmdRetorneContext):
         pass
 
     # Exit a parse tree produced by LAParser#cmdRetorne.
-    def exitCmdRetorne(self, ctx:LAParser.CmdRetorneContext):
+    def exitCmdRetorne(self, ctx: LAParser.CmdRetorneContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#selecao.
-    def enterSelecao(self, ctx:LAParser.SelecaoContext):
+    def enterSelecao(self, ctx: LAParser.SelecaoContext):
         pass
 
     # Exit a parse tree produced by LAParser#selecao.
-    def exitSelecao(self, ctx:LAParser.SelecaoContext):
+    def exitSelecao(self, ctx: LAParser.SelecaoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#item_selecao.
-    def enterItem_selecao(self, ctx:LAParser.Item_selecaoContext):
+    def enterItem_selecao(self, ctx: LAParser.Item_selecaoContext):
         pass
 
     # Exit a parse tree produced by LAParser#item_selecao.
-    def exitItem_selecao(self, ctx:LAParser.Item_selecaoContext):
+    def exitItem_selecao(self, ctx: LAParser.Item_selecaoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#constantes.
-    def enterConstantes(self, ctx:LAParser.ConstantesContext):
+    def enterConstantes(self, ctx: LAParser.ConstantesContext):
         pass
 
     # Exit a parse tree produced by LAParser#constantes.
-    def exitConstantes(self, ctx:LAParser.ConstantesContext):
+    def exitConstantes(self, ctx: LAParser.ConstantesContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#numero_intervalo.
-    def enterNumero_intervalo(self, ctx:LAParser.Numero_intervaloContext):
+    def enterNumero_intervalo(self, ctx: LAParser.Numero_intervaloContext):
         pass
 
     # Exit a parse tree produced by LAParser#numero_intervalo.
-    def exitNumero_intervalo(self, ctx:LAParser.Numero_intervaloContext):
+    def exitNumero_intervalo(self, ctx: LAParser.Numero_intervaloContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#op_unario.
-    def enterOp_unario(self, ctx:LAParser.Op_unarioContext):
+    def enterOp_unario(self, ctx: LAParser.Op_unarioContext):
         pass
 
     # Exit a parse tree produced by LAParser#op_unario.
-    def exitOp_unario(self, ctx:LAParser.Op_unarioContext):
+    def exitOp_unario(self, ctx: LAParser.Op_unarioContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#exp_aritmetica.
-    def enterExp_aritmetica(self, ctx:LAParser.Exp_aritmeticaContext):
+    def enterExp_aritmetica(self, ctx: LAParser.Exp_aritmeticaContext):
         pass
 
     # Exit a parse tree produced by LAParser#exp_aritmetica.
-    def exitExp_aritmetica(self, ctx:LAParser.Exp_aritmeticaContext):
+    def exitExp_aritmetica(self, ctx: LAParser.Exp_aritmeticaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#termo.
-    def enterTermo(self, ctx:LAParser.TermoContext):
+    def enterTermo(self, ctx: LAParser.TermoContext):
         pass
 
     # Exit a parse tree produced by LAParser#termo.
-    def exitTermo(self, ctx:LAParser.TermoContext):
+    def exitTermo(self, ctx: LAParser.TermoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#fator.
-    def enterFator(self, ctx:LAParser.FatorContext):
+    def enterFator(self, ctx: LAParser.FatorContext):
         pass
 
     # Exit a parse tree produced by LAParser#fator.
-    def exitFator(self, ctx:LAParser.FatorContext):
+    def exitFator(self, ctx: LAParser.FatorContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#op1.
-    def enterOp1(self, ctx:LAParser.Op1Context):
+    def enterOp1(self, ctx: LAParser.Op1Context):
         pass
 
     # Exit a parse tree produced by LAParser#op1.
-    def exitOp1(self, ctx:LAParser.Op1Context):
+    def exitOp1(self, ctx: LAParser.Op1Context):
         pass
 
-
     # Enter a parse tree produced by LAParser#op2.
-    def enterOp2(self, ctx:LAParser.Op2Context):
+    def enterOp2(self, ctx: LAParser.Op2Context):
         pass
 
     # Exit a parse tree produced by LAParser#op2.
-    def exitOp2(self, ctx:LAParser.Op2Context):
+    def exitOp2(self, ctx: LAParser.Op2Context):
         pass
 
-
     # Enter a parse tree produced by LAParser#op3.
-    def enterOp3(self, ctx:LAParser.Op3Context):
+    def enterOp3(self, ctx: LAParser.Op3Context):
         pass
 
     # Exit a parse tree produced by LAParser#op3.
-    def exitOp3(self, ctx:LAParser.Op3Context):
+    def exitOp3(self, ctx: LAParser.Op3Context):
         pass
 
-
     # Enter a parse tree produced by LAParser#parcela.
-    def enterParcela(self, ctx:LAParser.ParcelaContext):
+    def enterParcela(self, ctx: LAParser.ParcelaContext):
         pass
 
     # Exit a parse tree produced by LAParser#parcela.
-    def exitParcela(self, ctx:LAParser.ParcelaContext):
+    def exitParcela(self, ctx: LAParser.ParcelaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#parcela_unario.
-    def enterParcela_unario(self, ctx:LAParser.Parcela_unarioContext):
+    def enterParcela_unario(self, ctx: LAParser.Parcela_unarioContext):
         pass
 
     # Exit a parse tree produced by LAParser#parcela_unario.
-    def exitParcela_unario(self, ctx:LAParser.Parcela_unarioContext):
+    def exitParcela_unario(self, ctx: LAParser.Parcela_unarioContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#parcela_nao_unario.
-    def enterParcela_nao_unario(self, ctx:LAParser.Parcela_nao_unarioContext):
+    def enterParcela_nao_unario(self, ctx: LAParser.Parcela_nao_unarioContext):
         pass
 
     # Exit a parse tree produced by LAParser#parcela_nao_unario.
-    def exitParcela_nao_unario(self, ctx:LAParser.Parcela_nao_unarioContext):
+    def exitParcela_nao_unario(self, ctx: LAParser.Parcela_nao_unarioContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#exp_relacional.
-    def enterExp_relacional(self, ctx:LAParser.Exp_relacionalContext):
+    def enterExp_relacional(self, ctx: LAParser.Exp_relacionalContext):
         pass
 
     # Exit a parse tree produced by LAParser#exp_relacional.
-    def exitExp_relacional(self, ctx:LAParser.Exp_relacionalContext):
+    def exitExp_relacional(self, ctx: LAParser.Exp_relacionalContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#op_relacional.
-    def enterOp_relacional(self, ctx:LAParser.Op_relacionalContext):
+    def enterOp_relacional(self, ctx: LAParser.Op_relacionalContext):
         pass
 
     # Exit a parse tree produced by LAParser#op_relacional.
-    def exitOp_relacional(self, ctx:LAParser.Op_relacionalContext):
+    def exitOp_relacional(self, ctx: LAParser.Op_relacionalContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#expressao.
-    def enterExpressao(self, ctx:LAParser.ExpressaoContext):
+    def enterExpressao(self, ctx: LAParser.ExpressaoContext):
         pass
 
     # Exit a parse tree produced by LAParser#expressao.
-    def exitExpressao(self, ctx:LAParser.ExpressaoContext):
+    def exitExpressao(self, ctx: LAParser.ExpressaoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#termo_logico.
-    def enterTermo_logico(self, ctx:LAParser.Termo_logicoContext):
+    def enterTermo_logico(self, ctx: LAParser.Termo_logicoContext):
         pass
 
     # Exit a parse tree produced by LAParser#termo_logico.
-    def exitTermo_logico(self, ctx:LAParser.Termo_logicoContext):
+    def exitTermo_logico(self, ctx: LAParser.Termo_logicoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#fator_logico.
-    def enterFator_logico(self, ctx:LAParser.Fator_logicoContext):
+    def enterFator_logico(self, ctx: LAParser.Fator_logicoContext):
         pass
 
     # Exit a parse tree produced by LAParser#fator_logico.
-    def exitFator_logico(self, ctx:LAParser.Fator_logicoContext):
+    def exitFator_logico(self, ctx: LAParser.Fator_logicoContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#parcela_logica.
-    def enterParcela_logica(self, ctx:LAParser.Parcela_logicaContext):
+    def enterParcela_logica(self, ctx: LAParser.Parcela_logicaContext):
         pass
 
     # Exit a parse tree produced by LAParser#parcela_logica.
-    def exitParcela_logica(self, ctx:LAParser.Parcela_logicaContext):
+    def exitParcela_logica(self, ctx: LAParser.Parcela_logicaContext):
         pass
 
-
     # Enter a parse tree produced by LAParser#op_logico_1.
-    def enterOp_logico_1(self, ctx:LAParser.Op_logico_1Context):
+    def enterOp_logico_1(self, ctx: LAParser.Op_logico_1Context):
         pass
 
     # Exit a parse tree produced by LAParser#op_logico_1.
-    def exitOp_logico_1(self, ctx:LAParser.Op_logico_1Context):
+    def exitOp_logico_1(self, ctx: LAParser.Op_logico_1Context):
         pass
 
-
     # Enter a parse tree produced by LAParser#op_logico_2.
-    def enterOp_logico_2(self, ctx:LAParser.Op_logico_2Context):
+    def enterOp_logico_2(self, ctx: LAParser.Op_logico_2Context):
         pass
 
     # Exit a parse tree produced by LAParser#op_logico_2.
-    def exitOp_logico_2(self, ctx:LAParser.Op_logico_2Context):
+    def exitOp_logico_2(self, ctx: LAParser.Op_logico_2Context):
         pass
-
 
 
 del LAParser
