@@ -31,6 +31,7 @@ listener = LASemantico()
 # parser.programa()
 listener.visitPrograma(arvore)
 
+# Escrita dos erros na saida
 for error in Analisador.erros:
     output.write(error + "\n")
     print(error)

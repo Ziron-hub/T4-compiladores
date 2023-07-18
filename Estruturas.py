@@ -1,6 +1,6 @@
 from enum import Enum
 
-
+# Tabela de simbolos
 class TabelaDeSimbolos:
     class TipoLA(Enum):
         INTEIRO = 1
@@ -29,13 +29,14 @@ class TabelaDeSimbolos:
         self.tabelaTipo = {}
         self.tipo = tipo
 
+    # Cria tabela de simbolodas
     def adicionar_tabela_simbolos(self, nome: str, tipo: TipoLA, estrutura: Estrutura):
         etds = TabelaDeSimbolos.EntradaTabelaDeSimbolos(nome, tipo, estrutura)
         self.tabelaDeSimbolos[nome] = etds
-
+    # Adiciona entrada a tabela
     def adicionar_entrada_tabela_simbolos(self, entradaTabelaSimbolos: EntradaTabelaDeSimbolos):
         self.tabelaDeSimbolos[entradaTabelaSimbolos.nome] = entradaTabelaSimbolos
-
+    # Adiciona nome a tabela
     def adicionar_tipo_nome(self, tipoNome: str, entradaTabelaSimbolos: EntradaTabelaDeSimbolos):
 
         if tipoNome in self.tabelaTipo:
@@ -44,17 +45,16 @@ class TabelaDeSimbolos:
             list = []
             list.append(entradaTabelaSimbolos)
             self.tabelaTipo[tipoNome] = list
-
+    # Verifica se nome esta na tabela
     def contem(self, nome: str):
         return nome in self.tabelaDeSimbolos
-
     def verificar(self, nome: str):
         return self.tabelaDeSimbolos.get(nome).tipo
-    
+    # Verifica se tipo esta na tabela
     def verificar_tipo(self, nome: str):
         return self.tabelaTipo.get(nome) 
 
-
+# Escopo do compilador
 class Escopo:
     def __init__(self, tipo: TabelaDeSimbolos.TipoLA):
         self.pilhaDeTabelas = []

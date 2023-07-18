@@ -1,23 +1,22 @@
 from Estruturas import TabelaDeSimbolos, Escopo
 from LAParser import LAParser
 
-
+# Analisador semântico
 class Analisador:
 
     erros = []
 
-    @staticmethod
+    # Controle dos erros
     def adicionar_erro_semantico(token, mensagem):
 
         linha = token.line
         Analisador.erros.append(f"Linha {linha}: {mensagem}")
 
-    @staticmethod
+    # Verificacao de fator logico
     def verificar_tipo_fator_logico(escopos, contexto):
 
         return Analisador.verificar_tipo_parcela_logica(escopos, contexto.parcela_logica())
-
-    @staticmethod
+    # Verificacao de parcela logica
     def verificar_tipo_parcela_logica(escopos, contexto):
 
         functionReturn = None
@@ -28,16 +27,14 @@ class Analisador:
             functionReturn = TabelaDeSimbolos.TipoLA.LOGICO
 
         return functionReturn
-
-    @staticmethod
+    # Verificacao de parcela nao unaria
     def verificar_tipo_parcela_nao_unario(escopos, contexto):
         
         if contexto.identificador() is not None:
             return Analisador.verificar_tipo_identificador(escopos, contexto.identificador())
 
         return TabelaDeSimbolos.TipoLA.LITERAL
-
-    @staticmethod
+    # Verificacao de parcela unaria
     def verificar_tipo_parcela_unario(escopos, contexto):
         
         if contexto.NUM_INT() is not None:
@@ -56,8 +53,7 @@ class Analisador:
                 functionReturn = aux
             
             return functionReturn
-    
-    @staticmethod
+    # Verificacao de termo logico
     def verificar_tipo_termo_logico(escopos, contexto):
 
         functionReturn = None
@@ -67,8 +63,7 @@ class Analisador:
             functionReturn = aux
 
         return functionReturn
-
-    @staticmethod
+    # Verificacao de expressao relacional
     def verificar_tipo_exp_relacional(escopos, contexto):
 
         functionReturn = None
@@ -85,8 +80,7 @@ class Analisador:
             functionReturn = Analisador.verificar_tipo_exp_aritmetica(escopos, contexto.exp_aritmetica(0))
 
         return functionReturn
-
-    @staticmethod
+    # Verificacao de nome de variavel
     def verificar_tipo_nome_var(escopos, nomeVar: str):
         tipo = TabelaDeSimbolos.TipoLA.INVALIDO
 
@@ -95,8 +89,7 @@ class Analisador:
                 return tabela.verificar(nomeVar)
             
         return tipo
-    
-    @staticmethod
+    # Verificacao de expressao aritmetica
     def verificar_tipo_exp_aritmetica(escopos, contexto):
 
         functionReturn = None
@@ -106,8 +99,7 @@ class Analisador:
             functionReturn = aux
 
         return functionReturn
-
-    @staticmethod
+    # Verificacao de termos
     def verificar_tipo_termo(escopos, contexto):
 
         functionReturn = None
@@ -117,8 +109,7 @@ class Analisador:
             functionReturn = aux
 
         return functionReturn
-
-    @staticmethod
+    # Verificacao de fator
     def verificar_tipo_fator(escopos, contexto):
 
         functionReturn = None
@@ -128,8 +119,7 @@ class Analisador:
             functionReturn = aux
 
         return functionReturn
-
-    @staticmethod
+    # Verificao de expressao
     def verificar_tipo_expressao(escopos, ctx):
 
         functionReturn = None
@@ -139,8 +129,7 @@ class Analisador:
             functionReturn = aux
 
         return functionReturn
-
-    @staticmethod
+    # Verificar parcela
     def verificar_tipo_parcela(escopos, contexto):
 
         functionReturn = TabelaDeSimbolos.TipoLA.INVALIDO
@@ -150,8 +139,7 @@ class Analisador:
         else:
             functionReturn = Analisador.verificar_tipo_parcela_unario(escopos, contexto.parcela_unario())
         return functionReturn
-
-    @staticmethod
+    # Verificacao de identificador
     def verificar_tipo_identificador(escopos, contexto):
 
         nomeVar = ''
@@ -168,8 +156,7 @@ class Analisador:
 
         return functionReturn
 
-
-    @staticmethod
+    # Retorna o tipo
     def get_tipo(valor: str):
         tipo = None
         if valor == 'literal':
